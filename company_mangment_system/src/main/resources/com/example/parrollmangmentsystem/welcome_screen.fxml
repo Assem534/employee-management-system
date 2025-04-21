@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="930.0" prefWidth="1270.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.parrollmangmentsystem.deshboardcontroller">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <BorderPane layoutX="116.0" layoutY="197.0" prefHeight="930.0" prefWidth="1270.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <left>
+                  <AnchorPane prefHeight="930.0" prefWidth="309.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane fx:id="left" layoutX="-1.0" layoutY="92.0" prefHeight="930.0" prefWidth="309.0" styleClass="right_page" stylesheets="@design.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <ImageView fitHeight="219.0" fitWidth="277.0" layoutX="18.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="652.0" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="17.25" AnchorPane.topAnchor="59.0">
+                                 <image>
+                                    <Image url="@images/2222222222.png" />
+                                 </image>
+                              </ImageView>
+                              <Label alignment="CENTER" layoutX="27.0" layoutY="227.0" prefHeight="67.0" prefWidth="245.0" text="welcome" textFill="#fffbfb" AnchorPane.bottomAnchor="636.0" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="37.0" AnchorPane.topAnchor="227.0">
+                                 <font>
+                                    <Font name="Arial" size="37.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="-3.0" layoutY="284.0" prefHeight="59.0" prefWidth="305.0" text="Mr: Abd Elhader" textFill="WHITE" AnchorPane.bottomAnchor="587.0" AnchorPane.leftAnchor="-3.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="284.0">
+                                 <font>
+                                    <Font name="Arial Bold" size="30.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="home_visiable" layoutX="35.0" layoutY="382.0" mnemonicParsing="false" onAction="#Set_Home" prefHeight="55.0" prefWidth="216.0" styleClass="nav-button" stylesheets="@design.css" text=" Home" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="58.0" AnchorPane.topAnchor="382.0">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <graphic>
+                                    <FontAwesomeIcon fill="WHITE" glyphName="HOME" selectionFill="BLACK" />
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="add_employee_visiable" layoutX="35.0" layoutY="436.0" mnemonicParsing="false" onAction="#Set_Add_Employee" prefHeight="55.0" prefWidth="228.0" styleClass="nav-button" stylesheets="@design.css" text=" Add Employee" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="46.0" AnchorPane.topAnchor="436.0">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                                 <graphic>
+                                    <FontAwesomeIcon fill="WHITE" glyphName="PLUS" />
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="Absent_visiable" layoutX="34.0" layoutY="491.0" mnemonicParsing="false" onAction="#Set_Apsent" prefHeight="55.0" prefWidth="202.0" styleClass="nav-button" stylesheets="@design.css" text=" Absent" AnchorPane.leftAnchor="34.0" AnchorPane.rightAnchor="73.0" AnchorPane.topAnchor="491.0">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                                 <graphic>
+                                    <FontAwesomeIcon fill="WHITE" glyphName="USER_TIMES" />
+                                 </graphic>
+                              </Button>
+                              <Button layoutX="18.0" layoutY="873.0" mnemonicParsing="false" onAction="#log_out" prefHeight="40.0" stylesheets="@design.css" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="252.0">
+                                 <graphic>
+                                    <FontAwesomeIcon glyphName="SIGN_OUT" size="2em" />
+                                 </graphic>
+                                 <styleClass>
+                                    <String fx:value="logout" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                              </Button>
+                              <Label layoutX="67.0" layoutY="878.0" text="log out" textFill="WHITE" AnchorPane.bottomAnchor="22.0" AnchorPane.leftAnchor="67.0" AnchorPane.rightAnchor="174.0">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Line endX="129.0" layoutX="143.0" layoutY="356.0" startX="-108.0" />
+                              <Label fx:id="add_id" alignment="CENTER" contentDisplay="CENTER" layoutX="135.0" layoutY="70.0" prefHeight="0.0" prefWidth="0.0" text="Label" textFill="#fffafa">
+                                 <font>
+                                    <Font size="0.5" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="imagepath" layoutX="57.0" layoutY="36.0" text="Label">
+                                 <font>
+                                    <Font size="0.5" />
+                                 </font></Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane prefHeight="930.0" prefWidth="961.0" stylesheets="@design.css" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane fx:id="Home" layoutX="85.0" layoutY="222.0" prefHeight="886.0" prefWidth="961.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="11.0" layoutY="261.0" prefHeight="930.0" prefWidth="961.0" stylesheets="@design.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <styleClass>
+                                    <String fx:value="whit_pg" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                                 <children>
+                                    <AnchorPane prefHeight="231.0" prefWidth="961.0" stylesheets="@design.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <styleClass>
+                                          <String fx:value="whit_pg" />
+                                          <String fx:value="shadow" />
+                                       </styleClass>
+                                       <children>
+                                          <AnchorPane layoutX="14.0" layoutY="15.0" prefHeight="200.0" prefWidth="287.0" styleClass="cards" stylesheets="@design.css" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="660.0" AnchorPane.topAnchor="15.0">
+                                             <children>
+                                                <Label layoutX="14.0" layoutY="151.0" text="Number of men employees" textFill="WHITE" AnchorPane.bottomAnchor="22.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="43.0" AnchorPane.topAnchor="151.0">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="number_of_male" alignment="CENTER" layoutX="228.0" layoutY="14.0" prefHeight="53.0" prefWidth="34.0" text="0" textFill="#fffafa" AnchorPane.bottomAnchor="133.0" AnchorPane.leftAnchor="228.0" AnchorPane.rightAnchor="26.0" AnchorPane.topAnchor="14.0">
+                                                   <font>
+                                                      <Font size="36.0" />
+                                                   </font>
+                                                </Label>
+                                                <ImageView fitHeight="132.0" fitWidth="138.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="54.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="142.0" AnchorPane.topAnchor="14.0">
+                                                   <image>
+                                                      <Image url="@images/businessman.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="348.0" layoutY="15.0" prefHeight="200.0" prefWidth="290.0" styleClass="cards" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="348.0" AnchorPane.rightAnchor="323.0" AnchorPane.topAnchor="15.0">
+                                             <children>
+                                                <Label fx:id="number_of_female" alignment="CENTER" layoutX="241.0" layoutY="21.0" prefHeight="53.0" prefWidth="34.0" text="0" textFill="#fffafa" AnchorPane.bottomAnchor="126.0" AnchorPane.leftAnchor="242.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="21.0">
+                                                   <font>
+                                                      <Font size="36.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label layoutX="14.0" layoutY="159.0" text="Number of womans employees" textFill="WHITE" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="159.0">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <ImageView fitHeight="133.0" fitWidth="132.0" layoutX="7.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="54.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="152.0" AnchorPane.topAnchor="14.0">
+                                                   <image>
+                                                      <Image url="@images/employee%20(1).png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="627.0" layoutY="18.0" prefHeight="196.0" prefWidth="265.0" styleClass="cards" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="676.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="18.0">
+                                             <children>
+                                                <FontAwesomeIcon fill="WHITE" glyphName="USERS" layoutX="25.0" layoutY="108.0" size="5em" AnchorPane.bottomAnchor="79.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="175.71428680419922" AnchorPane.topAnchor="56.57143020629883" />
+                                                <Label layoutX="14.0" layoutY="155.0" text="Total employees" textFill="WHITE" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="113.0" AnchorPane.topAnchor="155.0">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="number_of" layoutX="217.0" layoutY="14.0" text="0" textFill="WHITE" AnchorPane.bottomAnchor="129.0" AnchorPane.leftAnchor="231.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="14.0">
+                                                   <font>
+                                                      <Font size="36.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </AnchorPane>
+                                    <PieChart fx:id="department_chart" layoutX="122.0" layoutY="308.0" prefHeight="476.0" prefWidth="761.0" title="Department employees" AnchorPane.bottomAnchor="146.0" AnchorPane.leftAnchor="122.0" AnchorPane.rightAnchor="78.0" AnchorPane.topAnchor="308.0" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="Add_Employee" layoutX="129.0" layoutY="183.0" prefHeight="888.0" prefWidth="961.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="11.0" prefHeight="930.0" prefWidth="961.0" stylesheets="@design.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                 <styleClass>
+                                    <String fx:value="whit_pg" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                                 <children>
+                                    <TextField fx:id="add_name" layoutX="14.0" layoutY="661.0" onInputMethodTextChanged="#Error_funcation" prefHeight="33.0" prefWidth="195.0" promptText="full name" styleClass="textfield" stylesheets="@design.css" AnchorPane.bottomAnchor="216.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="732.0" />
+                                    <TextField fx:id="add_address" layoutX="463.0" layoutY="661.0" onInputMethodTextChanged="#Error_funcation" prefHeight="33.0" prefWidth="195.0" promptText="address" styleClass="textfield" stylesheets="@design.css" AnchorPane.bottomAnchor="216.0" AnchorPane.leftAnchor="463.0" AnchorPane.rightAnchor="283.0" />
+                                    <TextField fx:id="add_phone" layoutX="248.0" layoutY="711.0" onInputMethodTextChanged="#Error_funcation" prefHeight="33.0" prefWidth="195.0" promptText="phone" styleClass="textfield" stylesheets="@design.css" AnchorPane.bottomAnchor="166.0" AnchorPane.leftAnchor="248.0" AnchorPane.rightAnchor="498.0" />
+                                    <TextField fx:id="add_email" layoutX="248.0" layoutY="661.0" onInputMethodTextChanged="#Error_funcation" prefHeight="33.0" prefWidth="195.0" promptText="email" styleClass="textfield" stylesheets="@design.css" AnchorPane.bottomAnchor="216.0" AnchorPane.leftAnchor="248.0" AnchorPane.rightAnchor="499.0" />
+                                    <ComboBox fx:id="add_department" layoutX="261.0" layoutY="760.0" onInputMethodTextChanged="#Error_funcation" prefHeight="33.0" prefWidth="170.0" promptText="department" styleClass="textfield" stylesheets="@design.css" AnchorPane.bottomAnchor="117.0" AnchorPane.leftAnchor="261.0" AnchorPane.rightAnchor="510.0" />
+                                    <VBox fx:id="vboxImage" layoutX="761.0" layoutY="638.0" prefHeight="180.0" prefWidth="110.0" stylesheets="@design.css" AnchorPane.bottomAnchor="92.0" AnchorPane.leftAnchor="761.0" AnchorPane.rightAnchor="63.0">
+                                       <children>
+                                          <ImageView fx:id="add_image" fitHeight="148.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true" />
+                                          <Button mnemonicParsing="false" onAction="#handleImportImage" prefHeight="32.0" prefWidth="126.0" styleClass="import-button" stylesheets="@design.css" text="import">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                       <styleClass>
+                                          <String fx:value="shadow" />
+                                          <String fx:value="whit_pg" />
+                                       </styleClass>
+                                    </VBox>
+                                    <DatePicker fx:id="add_birthday" layoutX="14.0" layoutY="711.0" onInputMethodTextChanged="#Error_funcation" prefHeight="33.0" prefWidth="195.0" promptText="birthday" styleClass="textfield" stylesheets="@design.css" AnchorPane.bottomAnchor="166.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="732.0" />
+                                    <ComboBox fx:id="add_gender" layoutX="27.0" layoutY="760.0" onInputMethodTextChanged="#Error_funcation" prefHeight="33.0" prefWidth="170.0" promptText="gendar" styleClass="textfield" stylesheets="@design.css" AnchorPane.bottomAnchor="117.0" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="744.0" />
+                                    <TextField fx:id="add_salary" layoutX="463.0" layoutY="711.0" onInputMethodTextChanged="#Error_funcation" prefHeight="33.0" prefWidth="195.0" promptText="salary" styleClass="textfield" stylesheets="@design.css" AnchorPane.bottomAnchor="166.0" AnchorPane.leftAnchor="463.0" AnchorPane.rightAnchor="283.0" />
+                                    <AnchorPane layoutX="12.0" layoutY="14.0" prefHeight="588.0" prefWidth="941.0" stylesheets="@design.css" visible="false" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <TextField fx:id="searchBar" layoutX="15.0" layoutY="14.0" onInputMethodTextChanged="#SearchBar" prefHeight="30.0" prefWidth="391.0" promptText="search" styleClass="search" stylesheets="@design.css" />
+                                          <FontAwesomeIcon glyphName="SEARCH" layoutX="22.0" layoutY="35.0" size="1.5em" />
+                                       </children>
+                                       <styleClass>
+                                          <String fx:value="whit_pg" />
+                                          <String fx:value="shadow" />
+                                       </styleClass>
+                                    </AnchorPane>
+                                    <TableView fx:id="table_view" layoutX="26.0" layoutY="59.0" prefHeight="556.0" prefWidth="921.0" stylesheets="@design.css" AnchorPane.bottomAnchor="295.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="59.0">
+                                       <columns>
+                                          <TableColumn fx:id="employeeid" maxWidth="300.0" minWidth="5.0" prefWidth="75.0" text=" ID" />
+                                          <TableColumn fx:id="name" prefWidth="78.0" text="name" />
+                                          <TableColumn fx:id="birthdate" minWidth="0.0" prefWidth="82.0" text="birthdate" />
+                                          <TableColumn fx:id="gender" prefWidth="75.0" text="gender" />
+                                          <TableColumn fx:id="email" minWidth="0.0" prefWidth="107.0" text="email" />
+                                          <TableColumn fx:id="phone" minWidth="4.0" prefWidth="117.0" text="phone" />
+                                          <TableColumn fx:id="address" prefWidth="113.0" text="address" />
+                                          <TableColumn fx:id="salary" minWidth="0.0" prefWidth="94.0" text="salary" />
+                                          <TableColumn fx:id="department" prefWidth="127.0" text="department" />
+                                       </columns>
+                                       <columnResizePolicy>
+                                          <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                       </columnResizePolicy>
+                                    </TableView>
+                                    <TextField fx:id="searchBar" layoutX="11.0" layoutY="9.0" onInputMethodTextChanged="#SearchBar" prefHeight="36.0" prefWidth="427.0" promptText="search" styleClass="search" stylesheets="@design.css" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="503.0" AnchorPane.topAnchor="9.0" />
+                                    <FontAwesomeIcon glyphName="SEARCH" layoutX="19.0" layoutY="33.0" size="1.5em" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="906.2857151031494" AnchorPane.topAnchor="17.571428298950195" />
+                                    <HBox layoutX="658.0" layoutY="850.0" prefHeight="55.0" prefWidth="268.0" spacing="20.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="658.0" AnchorPane.rightAnchor="15.0">
+                                       <children>
+                                          <Button mnemonicParsing="false" onAction="#Update_Data" prefHeight="45.0" prefWidth="115.0" styleClass="update-but" stylesheets="@design.css" text="Update" />
+                                          <Button mnemonicParsing="false" onAction="#clear" prefHeight="45.0" prefWidth="115.0" styleClass="clear-but" text="Clear" />
+                                       </children>
+                                       <padding>
+                                          <Insets right="10.0" top="10.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox layoutX="357.0" layoutY="839.0" prefHeight="58.0" prefWidth="245.0" spacing="15.0" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="357.0" AnchorPane.rightAnchor="340.0">
+                                       <children>
+                                          <Button mnemonicParsing="false" onAction="#Insert_employee" prefHeight="45.0" prefWidth="115.0" styleClass="add-but" stylesheets="@design.css" text="ADD">
+                                             <effect>
+                                                <Glow level="0.0" />
+                                             </effect>
+                                          </Button>
+                                          <Button mnemonicParsing="false" onAction="#DleteEmployee" prefHeight="45.0" prefWidth="115.0" styleClass="delete-but" stylesheets="@design.css" text="Delete" />
+                                       </children>
+                                       <padding>
+                                          <Insets top="10.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="Absent" layoutX="148.0" layoutY="232.0" prefHeight="888.0" prefWidth="961.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <TableView fx:id="attendancestable" layoutX="502.0" layoutY="69.0" prefHeight="841.0" prefWidth="445.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="497.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="69.0">
+                                <columns>
+                                    <TableColumn fx:id="attendances_id" prefWidth="75.0" text="ID" />
+                                  <TableColumn fx:id="attendances_name" prefWidth="75.0" text="name" />
+                                  <TableColumn fx:id="attendances_date" prefWidth="75.0" text="date" />
+                                    <TableColumn fx:id="attendances_time" prefWidth="75.0" text="time" />
+                                </columns>
+                                 <columnResizePolicy>
+                                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                 </columnResizePolicy>
+                              </TableView>
+                              <AnchorPane layoutX="71.0" layoutY="179.0" prefHeight="452.0" prefWidth="317.0" stylesheets="@design.css" AnchorPane.bottomAnchor="299.0" AnchorPane.leftAnchor="71.0" AnchorPane.rightAnchor="573.0" AnchorPane.topAnchor="179.0">
+                                 <styleClass>
+                                    <String fx:value="whit_pg" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                                 <children>
+                                    <TextField fx:id="Enter_the_time" layoutX="66.0" layoutY="167.0" prefHeight="40.0" prefWidth="186.0" promptText="Enter the time" styleClass="textfield" stylesheets="@design.css" AnchorPane.leftAnchor="66.0" AnchorPane.rightAnchor="66.0" AnchorPane.topAnchor="167.0" />
+                                    <Button fx:id="update_the_Attendances" layoutX="57.0" layoutY="296.0" mnemonicParsing="false" onAction="#Update_Data_Attendances" prefHeight="38.0" prefWidth="204.0" styleClass="delete-but" stylesheets="@design.css" text="Update the Attendances" AnchorPane.leftAnchor="57.0" AnchorPane.rightAnchor="57.0" AnchorPane.topAnchor="296.0">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Button>
+                                    <DatePicker fx:id="Enter_the_date" layoutX="66.0" layoutY="226.0" prefHeight="40.0" prefWidth="186.0" promptText="Enter the date" AnchorPane.leftAnchor="66.0" AnchorPane.rightAnchor="66.0" AnchorPane.topAnchor="226.0" />
+                                 </children>
+                              </AnchorPane>
+                              <TextField fx:id="searchBar_for_Absent" layoutX="17.0" layoutY="15.0" onInputMethodTextChanged="#SearchBar_Attendances" prefHeight="33.0" prefWidth="425.0" promptText="search" styleClass="search" stylesheets="@design.css" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="520.0" AnchorPane.topAnchor="15.0">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </TextField>
+                              <FontAwesomeIcon glyphName="SEARCH" layoutX="25.0" layoutY="37.0" size="1.5em" text="" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="920.2857151031494" AnchorPane.topAnchor="21.571428298950195" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                     <styleClass>
+                        <String fx:value="whit_pg" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

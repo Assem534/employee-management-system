@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="421.0" prefWidth="349.0" stylesheets="@design.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.parrollmangmentsystem.controllerClass">
+   <children>
+      <ImageView fitHeight="290.0" fitWidth="364.0" layoutX="4.0" layoutY="-16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/2222222222.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="username" layoutX="63.0" layoutY="225.0" prefHeight="43.0" prefWidth="224.0" promptText="username">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="password" layoutX="63.0" layoutY="280.0" prefHeight="43.0" prefWidth="224.0" promptText="password">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="styled_button" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="1.0" layoutX="63.0" layoutY="348.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="43.0" prefWidth="224.0" styleClass="styled_button" stylesheets="@design.css" text="login" textAlignment="CENTER" textFill="#969696">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+         <padding>
+            <Insets bottom="-1.0" top="1.0" />
+         </padding>
+      </Button>
+   </children>
+   <styleClass>
+      <String fx:value="login" />
+      <String fx:value="shadow" />
+   </styleClass>
+</AnchorPane>
