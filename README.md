@@ -1,9 +1,15 @@
 # employee-management-system
 this is simple employee management system to manage Employees you can use database by some button and you can manage salary.
-<br>And you can know the absent and attendances by face-recognition.<br>
+<br>And you can know the absent and attendances by face-recognition.
+## Tools
+ **front-end** { javafx , css }
+<br> **back-end** { java }
+<br> **database** { postgresql }
+<br> **face-recogniton** { python }
 ## Installation for face-recogniton
 First, make sure you have Python installed (version 3.7+ recommended).
-**To create the virtual file**
+<br>**To create the virtual file**
+<br> write in terminal.
 ```bash
 python -m venv venv
 ```
@@ -18,10 +24,12 @@ pip install cmake dlib face_recognition opencv-python numpy psycopg2-binary
 this is for python file.
 
 ## installation for java program in intellij
- file>project structure >librarys > + > add the lib in the library file.
- <br> go to the deshbourdController.java file in the variable is called targetDirectory.
- <br> make his value the path for the image file in the face-recognition file. 
+<br> **you must install javafx** 
+<br> 
+<br>file>project structure >librarys > + > add the lib in the library file.
+ 
  <br> **To make connection with database**
+ <br> go to the DatabaseConnection.java file 
   ```java
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -43,15 +51,15 @@ public class DatabaseConnection {
         return conn;
     }
 
-}```
+}
+```
+ <br> go to the deshbourdController.java file in the variable is called targetDirectory.
+ <br> make his value the path for the image file in the face-recognition file.
+ <br>
  ```java
 private String targetDirectory = "path/to/face_recognition/image";
 ```
-## Tools
-<br> **front-end** { javafx , css }
-<br> **back-end** { java }
-<br> **database** { postgresql }
-<br> **face-recogniton** { python }
+
 
 
 
