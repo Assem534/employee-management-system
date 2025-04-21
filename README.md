@@ -1,6 +1,12 @@
 # employee-management-system
 this is simple employee management system to manage Employees you can use database by some button and you can manage salary.
 <br>And you can know the absent and attendances by face-recognition.
+<br>
+![image alt](https://github.com/Assem534/employee-management-system/blob/ef788d13f6826bacca0604c5be7e32b80f19bc2d/Screenshot%202025-04-21%20125204.png) 
+![image alt](https://github.com/Assem534/employee-management-system/blob/ef788d13f6826bacca0604c5be7e32b80f19bc2d/Screenshot%202025-04-21%20125223.png)
+![image alt](https://github.com/Assem534/employee-management-system/blob/ef788d13f6826bacca0604c5be7e32b80f19bc2d/Screenshot%202025-04-21%20125235.png)
+![image alt](https://github.com/Assem534/employee-management-system/blob/ef788d13f6826bacca0604c5be7e32b80f19bc2d/Screenshot%202025-04-21%20125246.png)
+
 ## Tools
  **front-end** { javafx , css }
 <br> **back-end** { java }
