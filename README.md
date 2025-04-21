@@ -2,8 +2,23 @@
 this is simple employee management system to manage Employees you can use database by some button and you can manage salary.
 <br>And you can know the absent and attendances by face-recognition.
 <br>
+<br>
+## login-page
 ![image alt](https://github.com/Assem534/employee-management-system/blob/ef788d13f6826bacca0604c5be7e32b80f19bc2d/Screenshot%202025-04-21%20125204.png) 
+<br>
+<br>**username:** Admin
+<br>**password** 1442009
+<br>
+<br>
+## Home-page
+**This pie chart is dinamic**
+<br> he calculate the percentage for the number of employees and show it
+<br>
+<br>
 ![image alt](https://github.com/Assem534/employee-management-system/blob/ef788d13f6826bacca0604c5be7e32b80f19bc2d/Screenshot%202025-04-21%20125223.png)
+
+<br>
+<br>
 ![image alt](https://github.com/Assem534/employee-management-system/blob/ef788d13f6826bacca0604c5be7e32b80f19bc2d/Screenshot%202025-04-21%20125235.png)
 ![image alt](https://github.com/Assem534/employee-management-system/blob/ef788d13f6826bacca0604c5be7e32b80f19bc2d/Screenshot%202025-04-21%20125246.png)
 
